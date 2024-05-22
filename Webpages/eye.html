@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    .blue-box{
+      background-color: blue;
+      width:500px;
+      height: 300px;
+      position: relative;
+      top: 200px;
+      left: 500px;
+      z-index: -10;
+      border-radius: 75%;
+    }
+    .red-circle{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 150px;
+      top: 50px;
+
+    }
+
+    .over-circle{
+      background-color: rgb(174, 207, 174);
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: absolute;
+      top: 25px;
+      left: 125px;
+      z-index: -1;
+    }
+
+    .left-triangle {
+      position: absolute;
+      top: 350px;
+      left: 1006px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-left: 10px solid black;
+      border-right: 10px solid transparent;
+
+    }
+
+    .right-triangle {
+      position: absolute;
+      top: 350px;
+      left: 490px;
+      width: 0px;
+      height: 0px;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid black;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="right-triangle"></div>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+    <div class="over-circle"></div>
+  </div>
+  <div class="left-triangle"></div>
+
+</body>
+
+</html>
