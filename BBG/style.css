@@ -286,10 +286,10 @@ div#hero{
 }
 
 .contact img {
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 20%;
+  max-height: 20%;
   position: relative;
-  left: 42%;
+  left: 40%;
   border-radius: 45%;
   margin-bottom: 3%;
 }
