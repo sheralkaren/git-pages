@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    .flex-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+    .blue-box{
+      background-color: blue;
+      width:500px;
+      height: 300px;
+      position: relative;
+      /* top: 200px;
+      left: 500px; */
+      z-index: -10;
+      border-radius: 75%;
+    }
+    .red-circle{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 150px;
+      top: 50px;
+
+    }
+
+    .over-circle{
+      background-color: rgb(174, 207, 174);
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: absolute;
+      top: 25px;
+      left: 125px;
+      z-index: -1;
+    }
+
+    .left-triangle {
+      position: relative;
+      top: 40%;
+      left: 100%;
+      width: 0px;
+      height: 0px;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-left: 10px solid black;
+      border-right: 10px solid transparent;
+
+    }
+
+    .right-triangle {
+      position: relative;
+      top: 47%;
+      left: -4%;
+      width: 0px;
+      height: 0px;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid black;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class=flex-container>
+  
+  <div class="blue-box">
+    <div class="right-triangle"></div>
+    <div class="red-circle">
+    </div>
+    <div class="over-circle"></div>
+    <div class="left-triangle"></div>
+  </div>
+  
+  </div>
+
+</body>
+
+</html>

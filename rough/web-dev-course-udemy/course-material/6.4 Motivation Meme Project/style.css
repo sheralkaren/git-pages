@@ -1,0 +1,29 @@
+* {
+  background-color: black;
+}
+
+#poster {
+  width: 50%;
+  margin: 40px  25% 0% 25% ; /* top right bottom left */
+  float: center;
+  text-align: center;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+h1{
+  font-size: 3rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+
+}

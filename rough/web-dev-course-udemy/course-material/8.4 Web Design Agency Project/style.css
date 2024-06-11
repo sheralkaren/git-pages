@@ -1,0 +1,178 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h1 > span {
+  color: rgb(9, 9, 119);
+}
+.tile-image {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  object-fit: cover;
+
+}
+
+div.left.card {
+  display: inline-block;
+  width: 45%;
+}
+
+div.card.right {
+  display: inline-block;
+  width: 45%;
+  margin-left: 5%;
+  /* float: right; */
+}
+
+ .card-title {
+  position: relative;
+  left: 20px;
+}
+
+.card-text {
+  display: inline;
+  position: relative;
+  left: 20px;
+  right: 20px;
+  font-size: 1rem;
+  text-align:center;
+}
+
+footer {
+  text-align: right;
+  color: rgb(0, 0, 117);
+}
+
+@media (max-width: 572px){
+  body{
+    display: static;
+  }
+  .main {
+    position:relative;
+  }
+  .logo{
+    max-width: 100px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .tile-image {
+    display: block;
+    min-height: 300px;
+    min-width: 99%;
+    clear: both  !important;
+    position: relative;
+  }
+
+  .card-title {
+    display: block;
+    text-align: center;
+    position: relative;
+    left: -20px;
+    top: 10px;
+    clear: left;
+  }
+  .card-text {
+    display: inline-block;
+    font-size: 1rem;
+    position: inherit;
+    float: none;  
+    margin-bottom: 0;
+  }
+
+  
+  div.left.card, div.card.right {
+    display: block;
+    clear: left;
+    width: 96%;
+    margin: 1em auto;
+  }
+  
+}
+
+
+/* 
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px; ----> I like this line
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
+
+*/

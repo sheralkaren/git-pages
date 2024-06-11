@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+img {
+  position: relative;
+  background-color: rgb(187, 152, 217);
+  border-radius: 50%;
+  left: 45%;
+  margin-top: 2%
+  /* padding-left: %; */
+}
+
+* {
+  background-color: antiquewhite;
+}
