@@ -376,5 +376,7 @@ footer {
     width: 100%; /* Example image width adjustment for mobile */
   }
 
-  
+  .map iframe {
+    max-width: 80%;
+  }
 }
