@@ -225,6 +225,10 @@ div#hero{
   text-align: center;
 }
 
+.map {
+  max-width: 100%;
+}
+
 /* <!-- PARTNERS SLICK SLIDER STARTS HERE  --> */
 /* PARTNERS */
 
@@ -282,7 +286,7 @@ div#hero{
 }
 
 .contact img {
-  max-width: 15%;
+  max-width: 25%;
   max-height: 25%;
   position: relative;
   left: 42%;
