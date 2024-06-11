@@ -1,0 +1,376 @@
+/* VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+
+:root {
+  --zero-color: #FCDC94;
+  --primary-color: #EF9C66; 
+  --secondary-color: #E5CC74;
+  --tertiary-color: #78ABA8;
+  --color-one: white;
+  --color-two: rgb(79, 79, 75);
+  
+}
+
+body {
+  font-family: 'Raleway', 'Poppins', sans-serif;
+  font-weight: 400;
+/* font-style: italic; */
+  margin: 4%;
+  /* background-color: var(--zero-color); */
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 95vh;
+}
+
+/* NAVBAR */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.navbar-brand h1 {
+  margin: 14px 0 0 10px;
+  font-weight: 200;
+
+}
+
+a.navbar-brand img {
+  max-width: 50px;
+  width: auto;
+  height: auto;
+  border-radius: 99%;
+}
+
+div#navbarSupportedContent {
+  padding-left: 40%;
+  margin: 14px 0 0 10px;
+
+}
+
+#navbarSupportedContent li.nav-item {
+  margin-right: 20px;
+
+}
+
+#navbarSupportedContent li.nav-item a.nav-link {
+  font-weight: 400;
+}
+
+/* HERO */
+/* 
+div#hero{
+  background-image: url("./images/hero-1.webp");
+  padding-top: 10%;
+  min-height: 100%;
+
+  display: block;
+  color: white;
+
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: auto; 
+  border: 10px solid black;
+
+} */
+
+#hero {
+  /* color: #FCDC94; */
+  width: 100%;
+  height: 99%;
+  background: url("./images/hero-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 4%;
+}
+
+#hero-box {
+  margin: 0 40% 0 0; /*important*/
+  position: relative;
+}
+
+.hero-heading {
+  position: relative;
+  top: 20%;
+  font-size: 5em;
+  color: var(--color-two);
+}
+
+.hero-description {
+  position: relative;
+  top: 30%;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: var(--color-one);
+}
+
+.btn-box{
+  position: relative;
+  top: 30%;
+}
+
+.ctn-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 10% 0 0;
+  padding: 0 5%;
+}
+
+.know-more {
+  color: white;
+  border:  1px solid var(--zero-color);;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.book {
+  text-align: center;
+  background-color: var(--zero-color);
+}
+
+/* HISTORY */
+
+.history {
+  /* background-color: var(--zero-color); */
+  padding: 5% 5%;
+  background-color: var(--tertiary-color);
+
+}
+
+#history-title {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 3em;
+  color: var(--zero-color);
+}
+
+.know-more-history {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color-one);
+  border:  1px solid var(--zero-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 4% 40%;
+  
+}
+
+.history img {
+  border-radius: 50%;
+}
+
+.history .card {
+  background-color: transparent;
+  border: none;
+}
+
+.history .card-title {
+  text-align: center;
+  color: var(--color-one);
+}
+
+
+
+/* UEFA SPECIAL EVENT */
+.special-events{
+  padding: 5% 5%;
+  background-color: var(--secondary-color);
+}
+
+#uefa-image{
+  /* border-radius: 50%; */
+  max-width: 10%;
+  display: block;
+  position: relative;
+  left: 45%;
+  margin-top: 4%;
+
+}
+
+/* SERVICES */
+.services img {
+  border-radius: 70%;
+  max-height: 30%;
+  max-width: 80%;
+  position: relative;
+  left: 14%;
+}
+
+/* HOW TO VISIT US */
+.visit-us {
+  padding: 5% 5%;
+  background-color: var(--secondary-color);
+}
+
+.visit-us h1 {
+  text-align: center;
+  font-size: 3em;
+  color: var(--tertiary-color);
+}
+
+.visit-us>p {
+  text-align: center;
+  margin: 2% 20%;
+}
+
+.visit-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* <!-- PARTNERS SLICK SLIDER STARTS HERE  --> */
+/* PARTNERS */
+
+.slick-container{
+  padding-top: 150px;
+}
+
+.slick-slide{
+  margin: 0 20px;
+}
+.slick-slide img{
+  width: 100%;
+}
+.slick-slider{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block
+}
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img{
+  display: block;
+}
+.slick-initialized .slick-slide{
+  display: block;
+}
+.copy{
+  padding-top: 250px;
+}
+
+/* <!-- PARTNERS SLICK SLIDER ENDS HERE  --> */
+
+/* CONTACT */
+
+.contact-us {
+  padding: 5% 5%;
+  background-color: var(--tertiary-color);
+}
+
+.contact img {
+  max-width: 15%;
+  max-height: 25%;
+  position: relative;
+  left: 42%;
+  border-radius: 45%;
+  margin-bottom: 3%;
+}
+.contact h2 {
+  margin-bottom: 5%;
+}
+.contact p {
+  margin-top: 15%;
+  text-align: left;
+  margin: 0 0 2% 40%;
+}
+
+.subscribe {
+  margin: 5%;
+}
+
+#subscribe-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#subscribe-box input {
+  border-radius: 5px; /* All corners rounded by 5 pixels */
+  border: 1px solid #ccc; /* Optional border */
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin-right: 1%;
+}
+
+
+
+/* GO-TO-TOP  */
+#go-to-top {
+  position: fixed; /* Fix the element to a position */
+  bottom: 20px; /* Place it 20 pixels from the bottom */
+  right: 20px; /* Place it 20 pixels from the right */
+  width: 50px; /* Set button width */
+  height: 50px; /* Set button height */
+  background-color: var(--tertiary-color); /* Set background color */
+  color: var(--zero-color); /* Set text color */
+  text-align: center; /* Center the icon */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Adjust icon size */
+  border-radius: 50%; /* Make the button round */
+  opacity: 100; /* Initially hide the button */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+  z-index: 100;
+}
+
+#go-to-top:hover {
+  opacity: 1; /* Button becomes visible on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  margin: 4%;
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-box {
+    margin: 2%; /*important*/
+    position: relative;
+  }
+
+  body {
+    font-size: 14px; /* Example mobile font size adjustment */
+  }
+  .image {
+    width: 100%; /* Example image width adjustment for mobile */
+  }
+
+  
+}
