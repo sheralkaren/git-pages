@@ -1,0 +1,66 @@
+:root {
+  --height-1: 91vh;
+}
+
+body {
+  background-color: rgb(126, 192, 218);
+  margin: 2%;
+  border: 2px solid black;
+  /* min-height: 80vh; */
+}
+
+
+.container-fluid {
+  background-color: aliceblue;
+}
+
+.row {
+  min-height: var(--height-1);
+  flex-direction: row;
+  /* border: 10px solid red; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+.row > div {
+  display: block;
+  min-width: 33%;
+  min-height: 100%;
+  z-index: 1;
+  text-align: center;
+  line-height: 100%;
+  font-weight: 900;
+  font-size: 3em;
+  
+}
+
+.row > .d {
+  background-color: black;
+  color: white;
+}
+
+.row > .e {
+  background-color: red;
+  color: gold;
+
+}
+
+.row > .ee {
+  background-color:  gold;
+}
+
+img {
+  max-width: 5%;
+  max-height: 5%;
+  float: right;
+  z-index: 100;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  border-radius: 50%;
+}
+
+@media screen {
+  
+}
