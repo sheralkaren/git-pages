@@ -1,0 +1,42 @@
+{
+  
+  "name": "25---ejs",
+  
+  "version": "1.0.0",
+  
+  "main": "index.js",
+  
+  "type": "module",
+  
+  "scripts": {
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
+  },
+  
+  "author": "",
+  
+  "license": "ISC",
+  
+  "description": "",
+  
+  "dependencies": {
+  
+    
+  "ejs": "^3.1.10",
+  
+    
+  "express": "^4.19.2",
+  
+    
+  "morgan": "^1.10.0",
+  
+    
+  "random-quote-generator5.0": "^1.1.0",
+  
+    
+  "start-of-week": "^4.7.0"
+  
+  }
+}

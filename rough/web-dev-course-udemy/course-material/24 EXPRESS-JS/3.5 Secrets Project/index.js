@@ -32,7 +32,6 @@ function checkPassword(req, res, next){
 
 app.use(checkPassword);
 
-
 app.get('/', (req, res) => {
   res.sendFile(path.join(publicDirectoryPath, 'index.html'));
 });
