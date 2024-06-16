@@ -1,0 +1,17 @@
+<%- include('partials/header-1.ejs')%>
+
+<form action="/blog" method="POST">
+<% if (locals.blogContent){ %>
+  <label for="text"></label>
+  <textarea id="text" name="text" rows="4" cols="100" placeholder="Write your blog here"><%= blogContent %> </textarea>
+<% } else{ %>
+
+    <label for="text"></label>
+    <textarea id="text" name="text" rows="4" cols="100" placeholder="Write your blog here"></textarea>
+
+<% } %>
+
+<input class="btn btn-success" type="submit" value="Post">
+</form>
+
+<%- include('partials/footer-1.ejs')%>

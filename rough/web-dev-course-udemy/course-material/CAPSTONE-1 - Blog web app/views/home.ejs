@@ -1,0 +1,31 @@
+<%- include('partials/header-1.ejs')%> <% if (locals.blogs){ %> <%
+blogs.forEach((blog) => { %>
+
+<div class="blog">
+  <div class="blog-text"><p><%= blog %></p></div>
+  <div class="blog-buttons">
+    <%# show only 50 words in blog text %>
+    <button class="edit">Edit</button>
+    <%#- edit goes to post page but with other content %>
+    <button class="delete">Delete</button>
+  </div>
+</div>
+
+<% }) %> <% } else { %>
+<div class="d-flex justify-content-center">
+  <em>There are no blogs yet...</em>
+</div>
+<% } %> <%- include('partials/footer-1.ejs')%>
+
+<script>
+  $( document ).ready(function() {
+
+document.querySelectorAll('.blog-text p').forEach(blogTextElement => {
+  blogTextElement.addEventListener('click', () => {
+    const blogContent = blogContent.textContent.trim();
+    console.log(blogContent);
+    window.location.href = `/post?blogContent=${encodeURIComponent(blogContent)}`;
+  })
+});
+});
+</script>
