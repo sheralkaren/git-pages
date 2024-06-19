@@ -1,3 +1,90 @@
 body {
-  margin: 50px 50px 0px 50px;
+  background: linear-gradient(300deg, red, blue);
+  background-size: 1900px 1900px;
+  animation: background-animation 18s ease infinite; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  font-family: Impact, sans-serif;
+  margin: 4% 6%;
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  color: beige;
+  margin: 0;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  min-height: fit-content;
+  border: 10px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.card img{
+  max-width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 4%;
+}
+
+.card h3{
+  color: rgb(241, 243, 246);
+  font-size: 1.5em;
+  font-family: sans-serif
+
+}
+
+.card p {
+  text-align: center;
+  color: rgb(227, 229, 230);
+  font-family: sans-serif
+}
+
+.suggesstions {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: row;
+  color: white;
+}
+
+
+.suggesstions li {
+  
+  list-style: none;
+  font-size: 1em;
+}
+
+.suggesstions li > a {
+  /* text-decoration: none; */
+  color: rgb(200, 177, 177);
+}
+
+.links {
+  display: inline;
+  justify-content: center;
+  margin: 20px;
+  font-family: Impact, sans-serif
 }
