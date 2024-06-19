@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <% if (locals.nameLetterCount ){ %>
+    <h1>
+      Your first name has <%= nameLetterCount %> letters in it.
+    </h1>
+  <% } else { %>
+    <h1> Enter your name here 👇🏻</h1>
+    <% } %>
+  <form action="/submit" method="POST">
+    <label for="fName">Firstname:</label>
+    <input type="text" id="fName" name="fName" placeholder="First name" required>
+    <br/>
+    <label for="lName">Lastname:</label>
+
+    <input type="text" if="lName" name="lName" placeholder="Last name">
+    <input type="submit" value="OK">
+  </form>
+</body>
+
+</html>
