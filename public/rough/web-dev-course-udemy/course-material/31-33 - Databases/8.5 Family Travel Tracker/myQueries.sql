@@ -36,3 +36,24 @@ values
 select fName, address, guardianName from students
 join students_bio
 on students.id = students_bio.id;
+
+
+---
+create table users (
+	id serial primary key,
+	first_name text,
+	last_name text,
+	color text
+);
+
+
+
+create table visited_countries (
+	id serial primary key,
+	country_code varchar(2),
+	user_id int references users(id)
+);
+
+truncate table visited_countries;
+drop table visited_countries;
+
