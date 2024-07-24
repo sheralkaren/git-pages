@@ -1,0 +1,8 @@
+li {
+  list-style: none;
+}
+
+div {
+  align-items: center;
+  min-height: 30vh;
+}
