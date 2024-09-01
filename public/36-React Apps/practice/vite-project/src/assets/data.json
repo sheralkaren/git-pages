@@ -1,0 +1,8 @@
+{
+    "todos": [
+        {"id": 1, "title": "get some dry fruits", "url": "todo-1"},
+        {"id": 2, "title": "donate old newspapers", "url": "todo-2"},
+        {"id": 3, "title": "buy new t-shirts", "url": "todo-3"},
+        {"id": 4, "title": "buy your milk", "url": "todo-4"}
+    ]
+}
