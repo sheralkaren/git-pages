@@ -1,0 +1,19 @@
+body{
+    padding: 4%;
+    background-color: #a9b483;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    grid-template-rows: 100px;
+    gap: 10px;
+}
+
+div {
+    background-color: #dca6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
