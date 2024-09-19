@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(122, 183, 233);
+    margin: 2% 2%;
+}
+
+#header {
+    background-color: #616161;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1%;
+}
+.logo {
+    display: flex;
+    justify-content: start;
+    padding: 2%;
+}
+.logo > img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 1em; 
+}
+
+.navlinks > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 2%;
+}
+.navlinks > ul > li {
+    list-style: none;
+
+}
+
+.navlinks > ul > li > a {
+text-decoration: none;
+font-size: 1.25em;
+color: white;
+}
+/*  */
+
+.hiking-events {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2%;
+    min-height: 75vh;
+    background-color: #959292;
+    margin: 2%;
+}
+
+.event-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20%;
+}
+
+.event-search > button {
+    
+}
+
+.listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+    padding: 2%;
+}
+
+.listings > div {
+    background-color: #f8f8f8;
+    min-height: 20vh;
+
+}
