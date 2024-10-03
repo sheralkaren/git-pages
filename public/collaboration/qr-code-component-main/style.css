@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 227, 237);
+    min-height: 95vh;
+}
+
+.card {
+    padding: 2%;
+    background-color: white;
+    flex-basis: 50%;
+    border-radius: 5%;
+    margin-bottom: 2%;
+    max-width: 400px;
+}
+
+.card > img {
+    height: 400px;
+    width: 400px;
+    border-radius: 4%;
+}
+
+.card > * {
+    text-align: center;
+    text-overflow: clip;
+}
+
+.card p {
+    color: grey;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 572px){
+
+    .card {
+        max-width: 300px;
+    }
+    
+    .card > img {
+        height: 300px;
+        width: 300px;
+    }
+
+}

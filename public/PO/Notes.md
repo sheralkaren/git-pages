@@ -1,40 +1,50 @@
-Design thinking  (what are other ways?)
-(IDEO)
-
-Empathy - observe, interview/ interact, immersion
-Define - problem statement
-
-ideation
-prototyping / solution
-user testing
-feedback
-
-
-Eric Reis - Lean Startup method (BML)
-
-Agile Project Management (as Umbrella) - has many itertive project management (Scrum, Kanban, XtremeProgramming)
-
-
-design thinking
-lean statup
-agile project management
+write notes here:
+-
+-
+-
 
 
 
-Day 2: 
 
-Product Strategy considers followign:
 
--  understanding focus market
--  observe, interact and immerse in customer's environment
--  high level details of product that can solve with problem, and it's cutting edges from others
--  how to secure the model, and profitable business model
--  what we won't do! - early trade offs or parkings
--  how to measure success and evaluate financial risk limits
--  how to build a team that can execute the product strategy
 
-always look for:
-market share, research, trends 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Volkshochschule Friedrichshain-Kreuzberg
