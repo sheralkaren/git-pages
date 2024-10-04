@@ -49,6 +49,10 @@ h3 {
 
 }
 
+.buttons > *:hover{
+    background-color:hsl(75, 94%, 57%); ;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
