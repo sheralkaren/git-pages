@@ -1,0 +1,93 @@
+body{
+    box-sizing: border-box;
+    /* background: linear-gradient(340deg, red, blue);
+    background-size: 180% 180%;
+    animation: background-animation 9s ease infinite;  */
+    background-color: azure;
+}
+
+@keyframes background-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#open {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(126, 195, 156, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.2);
+    border: 0;
+}
+
+.modal-container {
+    background-color: rgba(0.2, 0.2, 0.2, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 100vh;
+    pointer-events: none; 
+    opacity: 0;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.modal-box > img {
+    width: 30%;
+    max-width: 75%;
+    height: 30%;
+    border-radius: 50%;
+    box-shadow: 3px 5px rgb(0, 0, 0, 0.2);
+
+}
+
+.modal-box > p {
+    opacity: 0.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.modal-box > #close {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(126, 195, 156);
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.2);
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+  
