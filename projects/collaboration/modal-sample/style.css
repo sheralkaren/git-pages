@@ -61,11 +61,10 @@ body{
 }
 
 .modal-box > img {
-    width: 30%;
-    max-width: 75%;
-    height: 30%;
-    border-radius: 50%;
-    box-shadow: 3px 5px rgb(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(126, 195, 156, 1);
 
 }
 
@@ -76,13 +75,15 @@ body{
 }
 
 .modal-box > #close {
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 10px;
-    background-color: rgb(126, 195, 156);
+    padding: 0;
+    border: 10px solid transparent;
+    border-radius: 20%;
+    background-color: rgba(126, 195, 156, 1);
     color: white;
     text-align: center;
-    box-shadow: 3px 3px rgb(0, 0, 0, 0.2);
+    box-shadow: 1px 3px rgb(0, 0, 0, 0.2);
+    order: -1;
+    align-self: flex-end;
 }
 
 .show {
