@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.container {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal-box {
+    background-color: rgba(105, 102, 102, 0.3);
+    /* height: 50%; */
+    width: 300px;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 2%;
+
+}
+
+h3 {
+    color: hsl(75, 94%, 57%);
+}
+
+.modal-box > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.buttons > * {
+    color: white;
+    background-color: rgb(62, 60, 60);
+    padding: 4% 0;
+    border-radius: 5px;
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px){
+.modal-box {
+    width: 200px;
+}
+
+.modal-box > p {
+    font-size: 12px;
+}
+.modal-box > img {
+    height: 70px;
+    width: 70px;
+}
+
+.buttons > * {
+    padding: 3% 0;
+}
+
+}
