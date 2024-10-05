@@ -1,0 +1,99 @@
+body{
+    box-sizing: border-box;
+    /* background: linear-gradient(340deg, red, blue);
+    background-size: 180% 180%;
+    animation: background-animation 9s ease infinite;  */
+    background-color: azure;
+}
+
+@keyframes background-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#open {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(126, 195, 156, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.2);
+    border: 0;
+}
+
+.modal-container {
+    background-color: rgba(0.2, 0.2, 0.2, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Below properties are used to enable modal behaviour */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    /* I love this line as it makes the fixed parent modal div resonsive by width: 100%. Once the parent modal-container div is responsive, the child div displayed are responsive too */
+    height: 100vh;
+    pointer-events: none; 
+    opacity: 0;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+    /* default width falls to minimum content width on smallest screen */
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.modal-box > img {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(126, 195, 156, 1);
+
+}
+
+.modal-box > p {
+    opacity: 0.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.modal-box > #close {
+    padding: 0;
+    border: 10px solid transparent;
+    border-radius: 20%;
+    background-color: rgba(126, 195, 156, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 1px 3px rgb(0, 0, 0, 0.2);
+    order: -1;
+    align-self: flex-end;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+  

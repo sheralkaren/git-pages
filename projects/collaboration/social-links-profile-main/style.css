@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* learning - to set margin and padding on body to zero to remove white space around container */
+}
 .container {
     background-color: black;
     color: white;
@@ -50,7 +55,9 @@ h3 {
 }
 
 .buttons > *:hover{
-    background-color:hsl(75, 94%, 57%); ;
+    background-color:hsl(75, 94%, 57%); 
+    cursor:pointer;
+    /* learning - learnt new during challenge */
 }
 
 

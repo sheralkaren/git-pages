@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/lion.jpg" size="32x32" type="image/x-icon">
     <title>modal-close</title>
-</head>
-<body>
-    <div class="container"></div>
-    <button>
-        show my profile
-    </button>
+  </head>
+  <body>
+    <div class="container">
+      <button id="open">
+            Show my profile
+      </button>
 
-    <div class="modal-container">
+      <div class="modal-container">
         <div class="modal-box">
-            <img src="" alt="">
-            <h2>Sheral Fernandes</h2>
-            <p>About Me: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsa nisi ad velit, deserunt et, quod quae eius quaerat perferendis odio molestias dolore? Repellendus nobis, recusandae nisi mollitia fugiat eos?</p>
-            <button>close</button>
+          <img src="./images/lion.jpg" alt="" />
+          <h2>Lion King</h2>
+          <p>
+            I'm a passionate learner and a genuinely good person. If you've never met an angel before, well, today’s your lucky day! <br />
+            In my free time, I love cooking and tidy up my home. I’m a big foodie, and lately, I’m all about protein!
+          </p>
+          <button id="close">X</button>
         </div>
+      </div>
     </div>
-    
-</body>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
