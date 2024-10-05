@@ -40,10 +40,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Below properties are used to enable modal behaviour */
     position: fixed;
     top: 0;
     left: 0;
-    width: 200vh;
+    width: 100%; 
+    /* I love this line as it makes the fixed parent modal div resonsive by width: 100%. Once the parent modal-container div is responsive, the child div displayed are responsive too */
     height: 100vh;
     pointer-events: none; 
     opacity: 0;
@@ -52,7 +55,9 @@ body{
 .modal-box {
     display: flex;
     flex-direction: column;
+
     max-width: 300px;
+    /* default width falls to minimum content width on smallest screen */
     align-items: center;
     text-align: center;
     background-color: white;
