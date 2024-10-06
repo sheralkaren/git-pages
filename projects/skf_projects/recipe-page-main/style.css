@@ -1,0 +1,95 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    display: flex;
+    background-color: hsl(30, 54%, 90%);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family:"Outfit" ;
+    font-size: 16px;
+    color:  hsl(30, 10%, 34%);
+    font-weight:250 ;
+
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 2%;
+    margin: 5%;
+
+}
+.card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 15px;
+    align-content: center;
+    margin-bottom: 0;
+}
+h1{
+    font-family: "Young Serif",serif;
+    margin-bottom: 0;
+    color: black;
+    font-weight: 400;
+}
+ h2{
+    font-family: "Young Serif",serif;
+    margin-bottom: 0;
+    color: hsl(14, 45%, 36%);
+ }
+
+ .prep{
+    h3{
+        color:hsl(332, 51%, 32%) ;
+        padding-left: 20px;
+    }
+    
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 2px;
+    li::marker{
+     color:hsl(332, 51%, 32%) ;
+    }
+ }
+
+ .ingr{
+    li::marker{
+        color:  hsl(14, 45%, 36%);
+    }
+    border-bottom: 1px solid rgb(205, 201, 201);
+}
+
+ .inst{
+    li::marker{
+        color:  hsl(14, 45%, 36%);
+    }
+
+    border-bottom: 1px solid rgb(205, 201, 201);
+ }
+
+.brown{
+    color: hsl(14, 45%, 36%);
+
+}
+ td{
+    border-bottom: 1px solid rgb(205, 201, 201);
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
