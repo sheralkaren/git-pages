@@ -1,5 +1,65 @@
+:root {
+  --light_green: hsl(148, 38%, 91%);
+  --medium_green: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+
+  /* ### Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --medium_grey: hsl(186, 15%, 59%);
+  --dark_grey: hsl(187, 24%, 22%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--light_green);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    max-height: fit-content;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    height: 80%;
+    width: 60%;
+    max-height: fit-content;
+    padding: 4%;
+    border-radius: 10px;
+    justify-content: space-evenly;
+
+}
+
+.form > * {
+    /* margin: 2%; */
+}
+
+.name {
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.error{
+    display: none;
+}
+.message {
+    display: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
