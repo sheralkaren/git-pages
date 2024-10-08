@@ -129,13 +129,14 @@ h2 {
 }
 
 #box_3 > h2 {
-    padding-right: 10%;
+    padding: 5% 10% 0 0;
     line-height: 0.9;
     margin-top: 5%;
 }
 
 #box_3 > img {
     margin: 0% 10%;
+    width: 70%;
     position: relative;
     top: 15%;
 }
@@ -250,9 +251,66 @@ body {
     gap: 20px;
     height: 100%;
 }
+
 .grid_box > * {
     flex: 1;
 
 }
+
+h1  {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 0.9;
+}
+
+h2 {
+    margin: 5% !important;
+}
+
+
+.grid_box > * {
+    padding: 5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+}
+
+#box_1 {
+    background-color: var(--dark_purple);
+    color: var(--white);
+    text-align: center;
+    grid-area: 1/2/2/4;
+    display: flex;
+    align-items: center;
+    /* padding: 5%; */
+}
+
+#box_5{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+}
+#box_5 > * {
+    flex: 1;
+}
+
+#box_6 > * {
+    margin: 5%;
+}
+
+
+#box_7{
+    padding: 15%;
+}
+
+#box_8 > h2{
+    padding: 5%;
+    align-items: flex-start;
+}
+
+
 
 }
