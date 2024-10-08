@@ -14,3 +14,8 @@ div::hover{
     
 ### overflow: hidden;
 line-height: 0.9;
+
+
+### prevent distortion by setting height: auto
+    width: 150%; /* Adjust the image width as needed */
+    height: auto;

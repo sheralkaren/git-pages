@@ -56,7 +56,15 @@ h1  {
 
 h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 0.9;
+
+}
+
+h3 {
+    margin: 0;
+    font-size: 26px;
     font-weight: 500;
     line-height: 0.9;
 
@@ -145,7 +153,8 @@ h2 {
     grid-area: 1/4/4/5;
     background-color: var(--light_purple);
     display: flex;
-    overflow: hidden;
+    overflow: auto;
+    overflow-x: hidden;
     padding-left: 10%;
 
 }
@@ -155,9 +164,13 @@ h2 {
 }
 
 #box_4 > img {
-    height: 60%;
-    min-width:180%;
-
+    /* flex-shrink: 0;
+    width: 150%; 
+    height: auto;
+    margin-right: 20%; 
+    padding-right: 30%; */
+    height: auto;
+    min-width:130%;
 }
 #box_4 > p {
     font-size: 16px;
@@ -207,6 +220,9 @@ h2 {
     padding: 15%;
 }
 
+#box_7 > img {
+    margin-top: 10%;
+}
 #box_8 {
     grid-area: 3/1/5/2;
     background-color: var(--dark_yellow);
@@ -214,14 +230,16 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     padding: 5%;
+    align-items: center;
 
 }
 #box_8 > h2{
     padding: 10%;
 }
 #box_8 > img {
-    width: 100%;
-    height: 60%;
+    width: 80%;
+    height: auto;
+
 }
 .attribution {
   font-size: 11px;
@@ -258,12 +276,16 @@ body {
 }
 
 h1  {
-    font-size: 44px;
+    font-size: 46px;
     font-weight: 500;
     line-height: 0.9;
 }
 
 h2 {
+    margin: 5% !important;
+}
+
+h3 {
     margin: 5% !important;
 }
 
