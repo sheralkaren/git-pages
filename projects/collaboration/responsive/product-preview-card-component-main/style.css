@@ -74,8 +74,8 @@ h1{
 h1 {
     font-weight: 700;
     margin: 10% 0 30px;
-    transform-style: preserve-3d;
-    animation: fa-author-colors 5s infinite;
+    /* transform-style: preserve-3d;
+    animation: fa-author-colors 5s infinite; */
 }
 
 @keyframes fa-author-colors {
