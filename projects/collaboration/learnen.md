@@ -21,3 +21,6 @@ line-height: 0.9;
     height: auto;
 
 `git commit --amend`
+
+
+## `max-height: fit-content` works really well for dynamic content
