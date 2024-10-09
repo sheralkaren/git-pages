@@ -19,60 +19,77 @@
       <div class="form">
         <h1>Contact Us</h1>
         <div class="name">
-          <label for="first_name">First Name</label>
-          <input type="text" name="first_name" id="first_name" placeholder="" />
-          <span class="error">This field is required</span>
-  
-          <label for="last_name">Last Name</label>
-          <input type="text" name="last_name" id="last_name" placeholder="" />
+          <div class="first_name">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" required />
+            <span class="error">This field is required</span>
+          </div>
+          <div class="last_name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" required />
+            <span class="error">This field is required</span>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">Email Address</label>
+          <input
+            class="input-style"
+            type="email"
+            name="email"
+            id="email"
+            placeholder=""
+          />
+          <span class="error">Please enter a valid email address</span>
+        </div>
+        <div class="query">
+          <p>Query Type</p>
+          <div>
+            <input
+              type="radio"
+              name="query"
+              id="generalEnquiry"
+              value="generalEnquiry"
+              required
+            />
+            <label for="generalEnquiry">General Enquiry</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="query"
+              id="supportRequest"
+              value="supportRequest"
+            />
+            <label for="supportRequest">Support Request</label>
+          </div>
+          <span class="error">Please select a query type.</span>
+        </div>
+
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
           <span class="error">This field is required</span>
         </div>
 
-        <label for="email">Email Address</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Please enter a valid email address"
-        />
-        <span class="error">This field is required</span>
-
-        <label for="query">Query Type</label>
-        <div class="radio-group">
-          <label for="generalEnquiry">General Enquiry</label>
-          <input
-            type="radio"
-            name="query"
-            id="generalEnquiry"
-            value="generalEnquiry"
-            required
-          />
-
-          <label for="supportRequest">Support Request</label>
-          <input
-            type="radio"
-            name="query"
-            id="supportRequest"
-            value="supportRequest"
-          />
+        <div class="check">
+          <input type="checkbox" name="consent" id="consent" required />
+          <label for="consent">I consent to being contacted by the team.</label>
+          
+          <span class="error"
+            ><p>To submit this form, please consent to being contacted</p></span
+          >
         </div>
-        <span class="error">Please select a query type.</span>
-
-        <label for="message">Message</label>
-        <textarea name="message" id="message" required></textarea>
-        <span class="error">This field is required</span>
-
-        <input type="checkbox" name="consent" id="consent" required />
-
-        <label for="consent"> I consent to being contacted by the team.</label>
-        <span class="error">
-          To submit this form, please consent to being contacted</span
-        >
-        <button type="submit">Submit</button>
-        
+        <div class="submit">
+          <button type="submit">Submit</button>
+        </div>
       </div>
-      <div class="message">
-        <h3>Message Sent!</h3>
+      <div class="success-message">
+        <h4 style="display: flex; align-items: center">
+          <span style="padding-right: 10px"
+            ><img src="./assets/images/icon-success-check.svg" alt="check-icon"
+          /></span>
+          Message Sent!
+        </h4>
         <p>Thanks for completing the form. We'll be in touch soon!</p>
       </div>
     </div>
