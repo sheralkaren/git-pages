@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #bddbcb;
+
+}
+
+.container{
+    height: 100vh;
+    max-height: fit-content;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    background-color: #aa9dc8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 5%;
+
+
+}
+
+.logo img{
+    /* header span > img */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    height: 85%;
+    background-color: #bddbcb;
+}
+.search-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.search-element > input[type=text] {
+    width: 40%;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: white;
+    padding: 1%;
+    transition: width 0.4s ease-in-out;
+    font-size: large;
+    max-height: fit-content;
+    object-fit: cover;
+    /* background-image: url('./images/icon.svg');
+    background-position: 1px 1px;
+    background-repeat: no-repeat; */
+    text-align: center;
+
+}
+
+input[type=text]:focus {
+    background-color: rgb(175, 176, 228);
+    border: 1px solid red;
+    width: 60%;
+    color: white;
+
+
+    /* order: 1;
+    align-items: flex-start; */
+
+  }
+
+/* footer */
+
+footer {
+    height: 5%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    font-size: 12px;
+    background-color: #aa9dc8;
+
+}
