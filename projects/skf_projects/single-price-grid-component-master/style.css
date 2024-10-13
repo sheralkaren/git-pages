@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+    
+body{
+    padding: 0;
+    margin: 0;
+    background-color:hsl(178, 43%, 87%) 
+}
+
+.container{
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.card{
+    display: grid;
+    max-width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.9fr 1fr;
+    border-radius: 10px;   
+    
+}
+
+.card1{
+    grid-column: span 2;
+    background-color: white;
+    padding: 20px;
+}
+
+.card1>h2{
+    color: hsl(179, 62%, 43%);
+}
+.card1>h3{
+    color:hsl(71, 73%, 54%)
+}
+
+.card1>p1{
+    color:hsl(218, 22%, 67%);
+    font-weight: 100;
+}
+.card2{
+    background-color: hsl(179, 62%, 43%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    
+}
+
+#dollar{
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+.card2>p2{
+    font-weight: 100;
+}
+.card2>p3{
+    font-weight: 200;
+}
+
+.card2>button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color:hsl(71, 73%, 54%);
+    color: white;
+    text-align: center;
+    border: 0 ;
+    width: 80%;
+    margin-top: 15%;
+}
+
+.card3{
+    
+    background-color: hsl(179, 50%, 58%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    
+    
+}
+.card3>ul{
+    margin-top: 0px;
+    font-style: ;
+    list-style: none;
+    padding-left: 0%;
+    font-weight:100;
+}
+.card3>ul>li{
+    padding: 2px 0;
+}
+
+
+
+@media (max-width:605px){
+
+    .card{
+        display: grid;
+        max-width: 50%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        border-radius: 10px;   
+        
+    }
+   .card>*{
+    grid-column: span 1;
+   }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
