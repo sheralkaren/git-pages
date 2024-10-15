@@ -1,16 +1,19 @@
+# JS Advanced Notes
+```
 document.firstElementChild.lastElementChild.firstElementChild.innerHTML = "dee";
 
 document.querySelector('input').click(); // method
 document.querySelector('.class > p').style.color = "red"; // property
 
 document.location.href;
+```
+## Selecting HTML objects with JS:
 
-# Selecting HTML objects with JS:
-
+```
 document.getElementsByTagName("li") : returns HTML list of all list
 document.getElementsByClassName('class-name') : returns list of objects
 document.getElementById('id') : returns element object
-
+```
 ## query selector uses exact CSS selector style like #ID or .CLASS or combining them
 document.querySelector('css-selector') : unlike css, querySelector returns first found specific item; not all elements 
 for instance, document.querySelector('a') --> returns the first link. So, to select the specific anchor element inside li
@@ -123,3 +126,32 @@ function divide(num1, num2){
 }
 ```
 
+## section 18 - advanced JS concepts
+
+- event listerners
+- higher order functions
+- audio media element
+- switch statements
+- JS objects & constructor functions
+- object, method and dot notation
+
+#### constructor function
+
+function ConstructorFunc(name, age){
+    this.name = name;
+    this.age = age;
+    this.SendSuitCase = function(){}
+    moveSuitCase: function(){
+        alert("May I take your suitcase?");
+        pickUpSuitCase();
+        move();
+    }
+    pickUpSuitCase : function(){
+        alert("Pick up suitcase.");
+        pickUp();
+    }
+}
+
+let obj1 = new ConstructorFunc('Timmy', 12);
+let obj2 = new ConstructorFunc('Alex', 9);
+let obj3 = new ConstructorFunc('Mino', 14);

@@ -1,12 +1,11 @@
 
-document.querySelector('button').addEventListener('click', handleClick);
+// document.querySelector('button').addEventListener('click', handleClick);
 
-function handleClick() {
-    console.log();
+function makeSound(key) {
 
-    // this.classList.add('pressed');
 
-    switch (this.innerHTML) {
+    // make relevant sound
+    switch (key) {
         case 'w':
             new Audio('./sounds/tom-1.mp3').play();
             break;
@@ -30,11 +29,26 @@ function handleClick() {
             break;
 
         default:
-            console.log(`wrong key pressed ${this.innerHTML}`);
+            console.log(`wrong key pressed: ${key}`);
             break;
     }
 }
 
-for (let i = 0; i < document.querySelectorAll('button').length; i++) {
-    document.querySelectorAll('.drum')[i].addEventListener('click', handleClick);
+function handleAnimation(key){
+    console.log(key);
+    document.querySelector(`.${key}`).classList.add('pressed');
+    setTimeout(() => {document.querySelector(`.${key}`).classList.remove('pressed')}, 150);
 }
+// detect mouse click
+for (let i = 0; i < document.querySelectorAll('button').length; i++) {
+    document.querySelectorAll('.drum')[i].addEventListener('click', (e) => {
+        makeSound(e.target.innerHTML);
+        handleAnimation(e.target.innerHTML);
+});
+}
+
+// detect keyboard press
+document.addEventListener("keydown", (event) => {
+    makeSound(event.key);
+    handleAnimation(event.key);
+});
