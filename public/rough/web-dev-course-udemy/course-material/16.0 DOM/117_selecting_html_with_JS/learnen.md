@@ -93,3 +93,33 @@ document.querySelector('a').setAttribute["href", "value"];
 
 ```
 
+```
+var userInput = prompt("How do you do today?");
+
+window.alert(`You have used ${userInput.length} letters, \
+and can use remaining ${500 - userInput.length} letters`);
+
+// higher order function
+
+function calculator(num1, num2, method){
+    let value = method(num1, num2);
+    return value;
+}
+
+function add(num1, num2){
+    return num1 + num2;
+}
+
+function subtract(num1, num2){
+    return num1 - num2;
+}
+
+function multiply (num1, num2){
+    return num1 * num2;
+}
+
+function divide(num1, num2){
+    return num1 / num2;
+}
+```
+

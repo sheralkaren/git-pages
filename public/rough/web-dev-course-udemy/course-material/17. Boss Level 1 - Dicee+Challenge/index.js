@@ -1,7 +1,7 @@
 
 
 let button = document.querySelector('button').addEventListener('click', () => {
-
+    new Audio('./images/tom-4.mp3').play();
     let randomNumber1 = Math.floor((Math.random() * 6) + 1);
     let randomNumber2 = Math.floor((Math.random() * 6) + 1);
     let imageOne = document.querySelector(".img1").setAttribute('src',`./images/dice${randomNumber1}.png`);
