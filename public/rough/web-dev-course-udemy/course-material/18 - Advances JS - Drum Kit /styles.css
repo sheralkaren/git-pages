@@ -8,7 +8,12 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 1px 1px 2px #DA0463;
+  transition: color 2s ease-in-out;
 
+}
+
+h1:hover{
+  color: aquamarine;
 }
 
 footer {
