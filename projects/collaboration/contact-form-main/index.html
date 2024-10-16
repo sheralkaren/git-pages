@@ -16,18 +16,19 @@
   </head>
   <body>
     <div class="container">
-      <div class="form">
+      <form class="form" onsubmit="showMessage">
+        <!-- action="/" -->
         <h1>Contact Us</h1>
         <div class="name">
           <div class="first_name">
             <label for="first_name">First Name</label>
             <input type="text" name="first_name" id="first_name" required />
-            <span class="error">This field is required</span>
+            <span class="error">First Name field is required</span>
           </div>
           <div class="last_name">
             <label for="last_name">Last Name</label>
             <input type="text" name="last_name" id="last_name" required />
-            <span class="error">This field is required</span>
+            <span class="error">Last Name field is required</span>
           </div>
         </div>
         <div class="email">
@@ -69,7 +70,7 @@
         <div class="message">
           <label for="message">Message</label>
           <textarea name="message" id="message" required></textarea>
-          <span class="error">This field is required</span>
+          <span class="error">Message field is required</span>
         </div>
 
         <div class="check">
@@ -83,7 +84,9 @@
         <div class="submit">
           <button type="submit">Submit</button>
         </div>
-      </div>
+      </form>
+
+
       <div class="success-message">
         <h4 style="display: flex; align-items: center">
           <span style="padding-right: 10px"

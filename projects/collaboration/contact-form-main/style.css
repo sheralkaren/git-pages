@@ -49,7 +49,7 @@ body {
 #email, #first_name, #last_name, #message {
   width: 100%;
   height: 30px;
-  margin: 15px 0px;
+  margin: 5px 0px;
   border-radius: 5px;
   border: 1px solid var(--light_green);
   cursor: pointer;
@@ -85,7 +85,6 @@ input:focus, #message:focus {
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 6%;
-
 
 }
 
@@ -145,6 +144,7 @@ input:focus, #message:focus {
   padding: 2%;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 
@@ -156,7 +156,7 @@ input:focus, #message:focus {
     font-weight: 300;
     color: var(--red);
 }
-.show-error{
+.show-error {
   display: inline !important;
 
 }
@@ -197,15 +197,34 @@ input:focus, #message:focus {
 
 @media (max-width: 600px){
 
+
+
+  .name {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 6%;
+  
+  }
+
+
 .form {
     height: fit-content;
     width:80%; 
     padding: 6%;
 }
 
+.query {
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  margin-bottom: 10px;
+
+}
+
 .query > div {
-  padding: 4px;
-  gap: 10px;
+  padding: 7px;
+  margin-bottom: 15px;
   padding-left: 10px;
 }
 
@@ -243,12 +262,6 @@ input:focus, #message:focus {
   margin: 0;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 
 }
