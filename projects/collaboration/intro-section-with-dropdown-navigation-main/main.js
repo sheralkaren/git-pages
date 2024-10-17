@@ -1,7 +1,16 @@
-
-document.querySelector('.burger-icon > span').addEventListener('click', (e) => {
+let icon = document.querySelector('.burger-icon > span');
+icon.addEventListener('click', (e) => {
     let navItem = document.querySelector('.nav');
     navItem.classList.toggle('show-nav');
-    console.log(navItem.classList);
+    if (icon.innerHTML != 'x') {
+        icon.innerHTML = 'x';
+    }
+    else{
+        icon.innerHTML = "&#9776;";
+    }
+
 })
 
+function openOverlay(){
+    
+}
