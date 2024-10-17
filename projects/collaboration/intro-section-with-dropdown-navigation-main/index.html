@@ -17,11 +17,18 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="nav">
+
           <div class="logo">
+            <div class="logo-set">
             <img src="./images/s3-logo.png" alt="logo" />
             <h1>S<sup>3</sup> LAB</h1>
           </div>
+            <div class="burger-icon">
+              <span style="font-size:30px;cursor:pointer" onclick="openOverlay()">&#9776;</span>
+            </div>
+          </div>
+
+          <div class="nav">
           <div class="navigation">
             <ul>
               <li>
@@ -79,12 +86,13 @@
               <li><a href="#">About</a></li>
             </ul>
           </div>
-        </div>
 
         <div class="register">
           <a href="#">Login</a>
           <button>Register</button>
         </div>
+      </div>
+
       </div>
       <div class="main">
         <div class="content">
@@ -119,5 +127,6 @@
         </div>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
