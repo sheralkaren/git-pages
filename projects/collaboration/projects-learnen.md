@@ -24,3 +24,10 @@ line-height: 0.9;
 
 
 ## `max-height: fit-content` works really well for dynamic content
+
+## Intro to dropdown navigation
+<sup>3</sup>
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

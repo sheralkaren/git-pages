@@ -1,39 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="shortcut icon"
+      href="./images/s3-logo.png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="nav">
+          <div class="logo">
+            <img src="./images/s3-logo.png" alt="logo" />
+            <h1>S<sup>3</sup> LAB</h1>
+          </div>
+          <div class="navigation">
+            <ul>
+              <li>
+                <div class="dropdown">
+                  <button>
+                    Features
+                    <span
+                      ><img src="./images/icon-arrow-down.svg" alt="down-icon"
+                    /></span>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">
+                      <span
+                        ><img src="./images/icon-todo.svg" alt="todo" /> Todo
+                        List</span
+                      >
+                    </a>
+                    <a href="#">
+                      <span
+                        ><img src="./images/icon-calendar.svg" alt="todo" />
+                        Calendar</span
+                      >
+                    </a>
+                    <a href="#">
+                      <span
+                        ><img src="./images/icon-reminders.svg" alt="todo" />
+                        Reminders</span
+                      >
+                    </a>
+                    <a href="#">
+                      <span
+                        ><img src="./images/icon-planning.svg" alt="todo" />
+                        Planning</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button>
+                    Company
+                    <span
+                      ><img src="./images/icon-arrow-down.svg" alt="down-icon"
+                    /></span>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Blog</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <div class="register">
+          <a href="#">Login</a>
+          <button>Register</button>
+        </div>
+      </div>
+      <div class="main">
+        <div class="content">
+          <div class="content-text">
+          <h1>Make <br>remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+        </div>
+          <div class="content-images">
+            <img src="./images/client-databiz.svg" alt="" />
 
-  Features
-  Company
-  Careers
-  About
+            <img src="./images/client-audiophile.svg" alt="" />
+            <img src="./images/client-meet.svg" alt="" />
 
-  Login
-  Register
+            <img src="./images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./images/image-hero-desktop.png" alt="hero-image" />
+        </div>
+      </div>
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="footer">
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
