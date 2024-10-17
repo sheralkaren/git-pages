@@ -248,3 +248,188 @@ a {
     color: hsl(228, 45%, 44%);
   }
   
+
+
+
+@media (max-width: 800px) {
+
+body {
+  margin:0;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+}
+
+
+.navigation {
+    display: none;
+  width: 40%;
+  min-width: fit-content;
+  flex: 1.4;
+  gap: 10px;
+  
+}
+.navigation > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+/* dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+}
+
+.dropdown > button {
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  cursor: pointer;
+
+
+}
+.dropdown > button > span {
+  margin-left: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 160px;
+  background-color: white;
+  border-radius: 10px;
+  /* overflow-x: hidden; */
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: start;
+  padding: 15% 0;
+
+  
+}
+
+.dropdown-content a {
+  display: block;
+  color: #5d5858;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.dropdown-content span{
+    display: flex;
+    margin: 0 2%;
+    letter-spacing: 1px;
+}
+.dropdown-content span img {
+    height: 20px;
+    margin-right: 20px;
+
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #00a4bd;
+}
+
+.register {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  flex: 1;
+
+}
+.register > button {
+  font-size: 16px;
+  border: 1px solid var(--gray);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--gray);
+  cursor: pointer;
+
+}
+
+/* main  */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+
+}
+
+
+.hero-image {
+    order: -1;
+}
+
+.content-text{
+    text-align: center;
+}
+.content-text > h1 {
+    font-size: 5rem;
+}
+
+.content-text > p{  
+    text-align:justify;
+    margin: 0;
+}
+
+.content-text > button {
+    border: 0;
+    width: 80%;
+    transition: width 2s ease-in-out;
+    margin-top: 5%;
+    align-self: center;
+}
+
+.content-text > button:hover {
+    width: 100%;
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 5% 10%;
+    max-width: fit-content;
+
+
+}
+
+.content-images > img{
+    height: 20px;
+    padding: 2%;
+    ma
+}
+
+
+.footer{
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+}
