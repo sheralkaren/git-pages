@@ -1,5 +1,5 @@
 document.querySelectorAll('input[name="query"]').forEach(radioBtn => {
-    radioBtn.addEventListener('focus', () => {
+    radioBtn.addEventListener('focusout', () => {
         // console.log(radioBtn.parentElement)
         radioBtn.parentElement.style.backgroundColor = "hsl(148, 38%, 91%)";
 
@@ -28,6 +28,9 @@ document.querySelectorAll('input, #message').forEach(input => {
     })
 })
 
+function showMessage(){
+    document.querySelector('.success-message').classList.add('show-error');
+}
 
 document.querySelector('button[type="submit"]').addEventListener('click', (e) => {
 
@@ -86,6 +89,4 @@ document.querySelector('button[type="submit"]').addEventListener('click', (e) =>
     }
 });
 
-function showMessage(){
-    document.querySelector('.success-message').classList.add('show-error');
-}
+
