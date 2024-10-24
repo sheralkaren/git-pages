@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="https://e7.pngegg.com/pngimages/567/598/png-clipart-physical-fitness-exercise-equipment-fitness-centre-fitness-icon-text-trademark-thumbnail.png">
     <title>Gympool</title>
+    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+    
+    <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz"></script>
+    
+    <script>
+    window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+    window.amplitude.init('e03e0296827a2a28ff9a95b075354388', {"serverZone":"EU","autocapture":{"elementInteractions":true}});
+    </script>
 </head>
 <body>
     <div class="container">
