@@ -12,7 +12,7 @@ div::hover{
 
 
     
-### overflow: hidden;
+overflow: hidden;
 line-height: 0.9;
 
 
@@ -31,3 +31,5 @@ line-height: 0.9;
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+using position: fixed for overlay using js to set display: flex
