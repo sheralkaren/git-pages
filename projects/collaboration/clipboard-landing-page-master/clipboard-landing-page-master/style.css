@@ -45,7 +45,7 @@ p  {
 }
 
 .buttons > * {
-    padding: 10px 25px;
+    padding: 15px 30px;
     border-radius: 30px;
     border: 0;
     min-width: 50px;
@@ -54,10 +54,15 @@ p  {
 
 .buttons button:first-child {
     background-color: var(--strong-cyan);
+    box-shadow: 2px 2px 8px var(--strong-cyan);
+
+
 } 
 
 .buttons button:last-child {
     background-color: var(--light-blue);
+    box-shadow: 2px 2px 8px var(--light-blue);
+
 } 
 
 
