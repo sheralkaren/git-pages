@@ -1,6 +1,216 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+ --primary-color: #89A8B2;
+ --secondary-color: #B3C8CF;   
+ --tertiary: #E5E1DA;
+ --quadinary: #F1F0E8;
+ --text: rgb(74, 73, 73);
+ --secondary-text: var(--quadinary);
+ --white: white;
+ 
+ /* https://colorhunt.co/palette/89a8b2b3c8cfe5e1daf1f0e8     */
+}
+    body {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background-color: var(--quadinary);
+
+
+}
+
+.container {
+    height: 95vh;    
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-bottom: 5px;
+
+    
+}
+
+.header .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-left: 100px;
+}
+.header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+}
+
+.nav {
+    flex: 1.2;
+    max-width: fit-content;
+    margin-right: 100px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+
+}
+
+.nav ul li {
+    
+    list-style: none;
+}
+.nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+
+    /* color: var(--text); */
+    /* color: var(--secondary-text); */
+
+
+
+}
+.profile img {
+    width: 50px;
+    height: auto;
+}
+
+
+/* main  */
+
+.main  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    border-radius: 20px;
+    border: var(--white) 2px solid;
+    background-color: var(--tertiary);
+    height: 50%;
+    min-width: 30%;
+    box-shadow: 20px 15px 5px var(--tertiary);
+    height: 400px;
+
+}
+
+.form > div:first-child {
+    text-align: center;
+    color: var(--text);
+}
+
+.form > div:first-child h2 {
+    font-size: 2rem;
+}
+
+.form > div:first-child p {
+    font-size: 0.9rem;
+}
+
+.form div > * {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* text-align: center; */
+    align-items: center;
+    justify-self: center;
+} 
+
+.form div > label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.form div > input {
+    border: 0;
+    padding: 7px;
+    border-radius: 10px;
+    width: 60%;
+    transition: width 0.2s ease-in-out;
+    text-align: center;
+}
+.form div > input:focus{
+    width: 80%;
+
+}
+
+.form > button {
+    margin-top: 20px;
+    width: 90%;
+    align-self: center;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 7px 5px 2px var(--primary-color);
+    cursor: pointer;
+
+}
+
+.form > button:hover{
+    background-color: var(--primary-color);
+    outline: 2px solid var(--secondary-color); /* Optional for better visibility */
+    outline-offset: 1px; /* Optional */
+}
+
+.form > button:focus{
+    background-color: var(--tertiary);
+    outline: 2px solid var(--secondary-color); /* Optional for better visibility */
+    outline-offset: 1px; /* Optional */
+}
+
+/* for index page */
+.cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 30px 50px;
+    margin-top: 5px;
+    border-radius: 20px;
+    color: var(--tertiary);
+    height: 90%;
+
+}
+.cat img {
+    height: 520px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--primary-color);
+    width: 100%;
+    margin-top: 5px;
 
 }
