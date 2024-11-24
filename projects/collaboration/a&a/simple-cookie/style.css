@@ -21,6 +21,12 @@
 
 
 }
+/* makes image fluid  */
+img {
+    max-width: 100%;
+    height: auto;
+    /* object-fit: contain; */
+}
 
 .container {
     height: 95vh;    
@@ -213,4 +219,21 @@
     width: 100%;
     margin-top: 5px;
 
+}
+
+@media (max-width: 800px){
+    .nav {
+        display: none;
+    }
+
+    .form {
+        max-width: 60%;
+        height: fit-content;
+    }
+
+    .cat {
+        max-width: 60%;
+        height: fit-content;
+    }
+ 
 }
