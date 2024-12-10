@@ -33,3 +33,12 @@ line-height: 0.9;
 }
 
 using position: fixed for overlay using js to set display: flex
+
+24.11.24:
+learnt sth: 
+/* makes image fluid  */
+img {
+    max-width: 100%;
+    height: auto;
+}
+optionally you can use : object-fit : cover or contain to make it better
