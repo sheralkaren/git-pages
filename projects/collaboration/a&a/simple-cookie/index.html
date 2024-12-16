@@ -10,7 +10,7 @@
     <title>Dee website</title>
 </head>
 
-<body>
+<body onload="checkAuth()">
     <div class="container">
         <div class="header">
             <div class="logo">
@@ -31,7 +31,11 @@
                     <li>
                         <div class="profile">
                             <img src="./images/snd-profile.png" alt="">
+                            <span></span>
                         </div>
+                    </li>
+                    <li id="logout">
+                        <p>Logout</p>
                     </li>
                 </ul>
             </div>

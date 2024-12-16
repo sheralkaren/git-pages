@@ -97,6 +97,10 @@ img {
     height: auto;
 }
 
+#logout{
+    cursor: pointer;
+}
+
 
 /* main  */
 
@@ -210,7 +214,7 @@ img {
 
 
 .footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: center;
