@@ -53,20 +53,20 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .box > div {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 2.5rem;
 
-  min-width: 200px;
+  min-width: 20rem;
   box-shadow: 0 0 10px 2px var(--grayish_blue);
 }
 
 .box > div > img {
-  width: 50px;
+  width: 3rem;
   height: auto;
   order: 1;
   align-self: flex-end;
