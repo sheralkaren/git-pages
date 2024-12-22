@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Burger Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Navigation container */
+    .menu-container {
+      position: relative;
+    }
+
+    /* Burger Icon */
+    .burger {
+      cursor: pointer;
+      display: none; /* Initially hidden on larger screens */
+      flex-direction: column;
+      gap: 5px;
+      width: 30px;
+    }
+
+    .burger div {
+      height: 4px;
+      width: 100%;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+    /* Navigation Menu */
+    .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .menu li {
+      margin: 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Mobile Menu */
+    @media (max-width: 768px) {
+      .burger {
+        display: flex; /* Show burger on small screens */
+      }
+
+      .menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: #444;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu.active {
+        display: flex; /* Show menu when active */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <div class="menu-container">
+      <!-- Burger Icon -->
+      <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Menu -->
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active'); // Toggles menu visibility
+    }
+  </script>
+</body>
+</html>
