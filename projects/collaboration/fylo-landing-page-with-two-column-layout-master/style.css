@@ -221,18 +221,18 @@ h1{
 }
 
 /* Burger Icon */
-div.burger {
+.burger {
     cursor: pointer;
-    display: none; /* Initially hidden on larger screens */
+    display: none;
     flex-direction: column;
     gap: 5px;
     width: 30px;
-    }
+}
 .burger div {
     height: 4px;
     width: 100%;
-    background-color: white;
-    border-radius: 2px;
+    background-color: var(--very_dark_blue);
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -334,14 +334,24 @@ button {
   }
 
   ul.menu {
-    display: none; /* Hide menu by default on mobile */
+    display: none; 
     flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background: #444;
-    padding: 10px;
+justify-content: space-around;
+    position: absolute; 
+    top: 55px;
+    right: 30px;
+    background: var(--light_gray);
+    padding: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: var(--very_dark_blue);
+    border-radius: 20px;
+    margin: 0;
+  }
+  ul.menu > li {
+    /* text-align: left; */
+    margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .menu.active {
